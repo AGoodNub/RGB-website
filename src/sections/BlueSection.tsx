@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { BrainIcon } from 'lucide-react';
 import { initScrollAnimation } from '../utils/animations';
+import BlueImg from '../assets/Blue.png';
 
 const BlueSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -47,7 +48,7 @@ const BlueSection = () => {
             <div className="fade-in">
               <div className="image-container">
                 <img 
-                  src="/Blue.png" 
+                  src={BlueImg} 
                   alt="Blue Level Screenshot" 
                   className="level-image"
                 />

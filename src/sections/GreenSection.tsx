@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { LeafIcon } from 'lucide-react';
 import { initScrollAnimation } from '../utils/animations';
+import GreenImg from '../assets/Green.png';
 
 const GreenSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -21,7 +22,7 @@ const GreenSection = () => {
             <div className="fade-in">
               <div className="image-container">
                 <img 
-                  src="/Green.png" 
+                  src={GreenImg}
                   alt="Green Level Screenshot" 
                   className="level-image"
                 />

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { MonitorSmartphoneIcon } from 'lucide-react';
 import { initScrollAnimation } from '../utils/animations';
+import HeroImg from '../assets/Hero.png';
 
 const HeroSection = () => {
   useEffect(() => {
@@ -42,7 +43,7 @@ const HeroSection = () => {
         <div className="fade-in delay-300 mt-12 relative">
           <div className="image-container floating">
             <img 
-              src="/Hero.png" 
+              src={HeroImg}
               alt="RGB Game Overview" 
               className="level-image"
             />

@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --red-color: #FF3B30;
+  --green-color: #34C759;
+  --blue-color: #007AFF;
+  --transition-duration: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-['Press_Start_2P'] text-base antialiased;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  overflow-x: hidden;
+}
+
+.section-container {
+  @apply min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-24 py-32 md:py-40;
+  transition: background-color var(--transition-duration) ease;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl lg:text-4xl font-bold mb-6 transition-all;
+  line-height: 1.5;
+}
+
+.section-description {
+  @apply text-base md:text-lg lg:text-xl max-w-3xl mx-auto mb-8 md:mb-12 transition-all;
+  line-height: 1.8;
+}
+
+.image-container {
+  @apply relative w-full max-w-4xl mx-auto overflow-hidden rounded-xl mb-8 md:mb-12;
+  aspect-ratio: 16 / 9;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.level-image {
+  @apply w-full h-full object-cover;
+  image-rendering: pixelated;
+}
+
+.btn {
+  @apply px-6 py-3 rounded-lg font-medium text-base transition-all duration-300 ease-in-out inline-block;
+}
+
+.btn-primary {
+  @apply bg-white text-black hover:bg-opacity-90 transform hover:-translate-y-1;
+}
+
+.btn-outline {
+  @apply border-2 border-white hover:bg-white hover:bg-opacity-10 transform hover:-translate-y-1;
+}
+
+.social-icon {
+  @apply text-white hover:text-opacity-70 transition-colors duration-300;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}

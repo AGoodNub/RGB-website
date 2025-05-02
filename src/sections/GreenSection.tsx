@@ -21,7 +21,7 @@ const GreenSection = () => {
             <div className="fade-in">
               <div className="image-container">
                 <img 
-                  src="src/sections/Green.png" 
+                  src="/Green.png" 
                   alt="Green Level Screenshot" 
                   className="level-image"
                 />

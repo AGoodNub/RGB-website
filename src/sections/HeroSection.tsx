@@ -42,7 +42,7 @@ const HeroSection = () => {
         <div className="fade-in delay-300 mt-12 relative">
           <div className="image-container floating">
             <img 
-              src="src/sections/Hero.png" 
+              src="/Hero.png" 
               alt="RGB Game Overview" 
               className="level-image"
             />

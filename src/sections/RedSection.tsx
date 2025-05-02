@@ -47,7 +47,7 @@ const RedSection = () => {
             <div className="fade-in">
               <div className="image-container">
                 <img 
-                  src="src/sections/Red.png" 
+                  src="/Red.png" 
                   alt="Red Level Screenshot" 
                   className="level-image"
                 />
